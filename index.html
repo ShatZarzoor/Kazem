@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO أساسي -->
     <title>معرض كاضم البهادلي - اكسسوارات وأجهزة كهربائية في ميسان</title>
-    <meta name="description" content="معرض كاضم البهادلي في ميسان لبيع اكسسوارات الموبايل، كفرات الأجهزة الكهربائية، وأجهزة العناية بالبشرة مع خدمة طلب وتوصيل داخل العراق.">
-    <meta name="keywords" content="معرض كاضم البهادلي, معرض كاضم البهادلي في ميسان, اكسسوارات الموبايل في ميسان, أجهزة كهربائية في ميسان, متجر ميسان, كفرات الأجهزة الكهربائية, عناية البشرة">
-    <meta name="robots" content="index,follow">
 
-    <!-- Open Graph (مفيدة لو شاركت الرابط) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="معرض كاضم البهادلي - اكسسوارات وأجهزة كهربائية في ميسان">
-    <meta property="og:description" content="تسوق من معرض كاضم البهادلي في ميسان: اكسسوارات موبايل، أجهزة كهربائية، وأجهزة عناية بالبشرة مع خدمة الطلب والتوصيل.">
-    <meta property="og:locale" content="ar_AR">
+    <meta name="description" content="معرض كاضم البهادلي في ميسان لبيع اكسسوارات الموبايل، الأجهزة الكهربائية، وأجهزة العناية بالبشرة مع خدمة الطلب أونلاين داخل ميسان.">
+    <meta name="keywords" content="معرض كاضم البهادلي, معرض كاظم البهادلي, اكسسوارات موبايل, أجهزة كهربائية, عناية البشرة, ميسان, متجر إلكتروني">
+    <meta name="author" content="معرض كاضم البهادلي">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -89,7 +83,7 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 18px;
+            gap: 25px;
         }
 
         nav a {
@@ -140,8 +134,8 @@
             background-position: center;
             color: white;
             text-align: center;
-            padding: 80px 20px;
-            margin-bottom: 40px;
+            padding: 80px 20px 60px;
+            margin-bottom: 20px;
         }
 
         .hero h2 {
@@ -150,49 +144,54 @@
         }
 
         .hero p {
-            font-size: 17px;
+            font-size: 18px;
             max-width: 700px;
-            margin: 0 auto 25px;
+            margin: 0 auto;
         }
 
-        /* SEO – قسم تعريف عن المعرض داخل الصفحة الرئيسية */
+        /* About section */
         .about-section {
-            background-color: #ffffff;
+            background: #ffffff;
             border-radius: var(--border-radius);
             box-shadow: var(--shadow);
-            padding: 25px 20px;
-            margin: -20px auto 40px;
+            padding: 20px 18px;
+            margin-bottom: 35px;
         }
 
         .about-section h2 {
-            font-size: 22px;
-            color: var(--primary);
+            font-size: 20px;
             margin-bottom: 10px;
-        }
-
-        .about-section h3 {
-            font-size: 18px;
-            color: var(--accent);
-            margin: 10px 0;
+            color: var(--primary);
         }
 
         .about-section p {
-            margin-bottom: 10px;
+            font-size: 14px;
+            margin-bottom: 8px;
         }
 
         .about-section ul {
-            list-style: disc;
-            padding-right: 20px;
+            margin-right: 18px;
             margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .about-section a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .about-section a:hover {
+            text-decoration: underline;
         }
 
         /* Products */
         .section-title {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 25px;
             color: var(--primary);
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
         }
 
         .section-title:after {
@@ -206,11 +205,39 @@
             background-color: var(--accent);
         }
 
+        .categories-filter {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 8px 18px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+
+        .category-btn.active {
+            background-color: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .category-btn:hover:not(.active) {
+            background-color: #f5f5f5;
+        }
+
         .products-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
         @media (min-width: 768px) {
@@ -264,13 +291,14 @@
             margin-bottom: 8px;
             height: 40px;
             overflow: hidden;
+            font-size: 14px;
         }
 
         .product-price {
             color: var(--secondary);
             font-weight: 700;
             font-size: 18px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .product-actions {
@@ -290,6 +318,7 @@
             gap: 8px;
             transition: all 0.3s;
             flex: 1;
+            font-size: 14px;
         }
 
         .btn-preview {
@@ -365,14 +394,15 @@
 
         .product-video {
             width: 100%;
-            height: 400px;
+            height: 300px;
             background-color: #000;
             border-radius: var(--border-radius);
             overflow: hidden;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
-        .product-video iframe, .product-video video {
+        .product-video iframe,
+        .product-video video {
             width: 100%;
             height: 100%;
             border: none;
@@ -404,22 +434,27 @@
         }
 
         .product-description {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             line-height: 1.8;
+            font-size: 14px;
         }
 
         .modal-actions {
             display: flex;
             gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         .modal-actions .btn {
-            padding: 12px 20px;
-            font-size: 16px;
+            padding: 10px 18px;
+            font-size: 14px;
+            flex: 0 0 auto;
         }
 
         /* Cart */
-        .cart-page, .checkout-page {
+        .cart-page,
+        .checkout-page {
             padding: 40px 0;
             min-height: 70vh;
         }
@@ -464,11 +499,13 @@
         .cart-item-title {
             font-weight: 600;
             margin-bottom: 5px;
+            font-size: 14px;
         }
 
         .cart-item-price {
             color: var(--secondary);
             font-weight: 700;
+            font-size: 14px;
         }
 
         .remove-item {
@@ -497,6 +534,7 @@
             margin-bottom: 15px;
             padding-bottom: 10px;
             border-bottom: 1px solid #eee;
+            font-size: 14px;
         }
 
         .total-row {
@@ -513,7 +551,7 @@
             color: white;
             width: 100%;
             padding: 15px;
-            font-size: 18px;
+            font-size: 16px;
             margin-top: 20px;
         }
 
@@ -532,21 +570,22 @@
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             font-weight: 600;
+            font-size: 14px;
         }
 
         .form-control {
             width: 100%;
-            padding: 12px 15px;
+            padding: 10px 12px;
             border: 1px solid #ddd;
             border-radius: var(--border-radius);
-            font-size: 16px;
+            font-size: 14px;
             transition: border 0.3s;
         }
 
@@ -563,7 +602,8 @@
         .form-actions {
             display: flex;
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
 
         .btn-submit {
@@ -590,14 +630,14 @@
         footer {
             background-color: var(--primary);
             color: white;
-            padding: 40px 0 20px;
-            margin-top: 60px;
+            padding: 30px 0 15px;
+            margin-top: 40px;
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            gap: 30px;
+            gap: 25px;
         }
 
         @media (min-width: 768px) {
@@ -607,16 +647,18 @@
         }
 
         .footer-section h3 {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: var(--accent);
+            font-size: 16px;
         }
 
         .footer-section ul {
             list-style: none;
+            font-size: 14px;
         }
 
         .footer-section ul li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .footer-section a {
@@ -631,20 +673,20 @@
 
         .copyright {
             text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
+            margin-top: 20px;
+            padding-top: 15px;
             border-top: 1px solid rgba(255,255,255,0.1);
             color: #aaa;
-            font-size: 14px;
+            font-size: 13px;
         }
 
-        /* Loading */
+        /* Empty / Loading */
         .loading {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 300px;
-            font-size: 18px;
+            height: 200px;
+            font-size: 16px;
             color: var(--gray);
         }
 
@@ -658,49 +700,20 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* Categories */
-        .categories-filter {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .category-btn {
-            padding: 8px 20px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .category-btn.active {
-            background-color: var(--accent);
-            color: white;
-            border-color: var(--accent);
-        }
-
-        .category-btn:hover:not(.active) {
-            background-color: #f5f5f5;
-        }
-
-        /* Empty States */
         .empty-cart {
             text-align: center;
-            padding: 60px 20px;
+            padding: 40px 20px;
         }
 
         .empty-cart i {
-            font-size: 80px;
+            font-size: 70px;
             color: var(--gray);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .empty-cart p {
-            font-size: 18px;
-            margin-bottom: 30px;
+            font-size: 16px;
+            margin-bottom: 20px;
         }
 
         /* Success Message */
@@ -708,19 +721,103 @@
             display: none;
             background-color: #d4edda;
             color: #155724;
-            padding: 20px;
+            padding: 18px;
             border-radius: var(--border-radius);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-align: center;
+            font-size: 14px;
         }
 
         .success-message i {
-            font-size: 40px;
-            margin-bottom: 15px;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        /* موبايل adjustments */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 0;
+            }
+
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .logo h1 {
+                font-size: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 45px 15px 35px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+                line-height: 1.4;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .about-section {
+                padding: 15px 12px;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+
+            .categories-filter {
+                gap: 6px;
+            }
+
+            .category-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .product-title {
+                height: auto;
+                min-height: 32px;
+            }
+
+            .product-price {
+                font-size: 16px;
+            }
+
+            .btn {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+
+            .cart-item {
+                flex-wrap: wrap;
+            }
+
+            .cart-item-image {
+                margin-bottom: 10px;
+            }
+
+            .checkout-form {
+                padding: 20px 15px;
+            }
         }
     </style>
 </head>
 <body>
+
     <!-- Header -->
     <header>
         <div class="container header-content">
@@ -730,7 +827,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="#" class="nav-home"><i class="fas fa-home"></i> الرئيسية</a></li>
                     <li><a href="#about"><i class="fas fa-info-circle"></i> عن المعرض</a></li>
                     <li><a href="#" class="category-filter" data-category="موبايل"><i class="fas fa-mobile-alt"></i> اكسسوارات الموبايل</a></li>
                     <li><a href="#" class="category-filter" data-category="أجهزة كهربائية"><i class="fas fa-plug"></i> أجهزة كهربائية</a></li>
@@ -742,7 +839,6 @@
                         </a>
                     </li>
                     <li><a href="admin.html" class="admin-link"><i class="fas fa-cog"></i> لوحة التحكم</a></li>
-                    <li><a href="about.html"><i class="fas fa-book"></i> معلومات المعرض</a></li>
                 </ul>
             </nav>
         </div>
@@ -752,43 +848,30 @@
     <section class="hero">
         <div class="container">
             <h2>أحدث اكسسوارات الموبايل والأجهزة الكهربائية في ميسان</h2>
-            <p>اكتشف مجموعتنا الواسعة من اكسسوارات الموبايل، كفرات الأجهزة الكهربائية، وأجهزة العناية بالبشرة بأفضل الأسعار من معرض كاضم البهادلي في ميسان مع خدمة طلب وتوصيل.</p>
+            <p>اكتشف مجموعتنا الواسعة من اكسسوارات الموبايل، كفرات الأجهزة الكهربائية، وأجهزة العناية بالبشرة بأفضل الأسعار مع خدمة الطلب والتوصيل.</p>
         </div>
     </section>
 
-    <!-- قسم تعريفي داخل الصفحة (SEO داخلي) -->
+    <!-- About -->
     <section class="container about-section" id="about">
         <h2>عن معرض كاضم البهادلي في ميسان</h2>
-        <p>
-            معرض كاضم البهادلي هو معرض متخصص في بيع اكسسوارات الموبايل، كفرات الأجهزة الكهربائية،
-            وأجهزة العناية بالبشرة، ويخدم أهالي <strong>ميسان</strong> والمناطق القريبة منها مع إمكانية
-            تجهيز الطلبات لأكثر من محافظة داخل العراق حسب الاتفاق.
-        </p>
-        <h3>ماذا تجد لدينا؟</h3>
+        <p>معرض كاضم البهادلي هو معرض متخصص في بيع:</p>
         <ul>
-            <li>اكسسوارات موبايل حديثة (شواحن، سماعات، كفرات حماية، حوامل، وغيرها).</li>
-            <li>أجهزة كهربائية منزلية عملية وأساسية لكل بيت.</li>
-            <li>أجهزة عناية بالبشرة والشعر للاستخدام المنزلي.</li>
-        </ul>
-        <h3>مميزات الشراء من معرض كاضم البهادلي</h3>
-        <ul>
-            <li>أسعار مناسبة ومنافسة مع عروض مستمرة.</li>
-            <li>إمكانية مشاهدة صور المنتج وتفاصيله من خلال المتجر الإلكتروني.</li>
-            <li>طلب سريع عبر المتجر مع استلام بياناتك والتواصل لتأكيد الطلب.</li>
+            <li>اكسسوارات الموبايل والكفرات والسماعات والملحقات الأصلية.</li>
+            <li>أجهزة كهربائية منزلية مثل الدفايات، المراوح، والأجهزة الصغيرة.</li>
+            <li>أجهزة ومنتجات العناية بالبشرة والشعر.</li>
         </ul>
         <p>
-            يمكنك استخدام هذا المتجر الإلكتروني لاختيار المنتج، إضافته إلى السلة، وإرسال طلبك،
-            ليتم التواصل معك من قبل إدارة معرض كاضم البهادلي لتأكيد الطلب وتحديد طريقة التوصيل
-            داخل ميسان أو للمحافظات الأخرى.
+            يمكنك من خلال هذا المتجر الإلكتروني تصفح المنتجات، مشاهدة الصور، ثم إضافة المنتج إلى السلة وإرسال طلبك ليتم التواصل معك من قبل إدارة المعرض لتأكيد الطلب والتوصيل داخل ميسان.
         </p>
         <p>
-            للمزيد من المعلومات عن المعرض وطريقة الطلب من داخل وخارج ميسان، يمكنك زيارة صفحة
-            <a href="about.html">معلومات معرض كاضم البهادلي في ميسان</a>.
+            هذه الصفحة الإلكترونية تساعد الزبائن داخل ميسان وخارجها على التعرف على
+            <strong>معرض كاضم البهادلي في ميسان</strong> والمنتجات المتوفرة فيه.
         </p>
     </section>
 
     <!-- Products -->
-    <section class="container">
+    <section class="container" id="productsSection">
         <h2 class="section-title">منتجاتنا المميزة</h2>
 
         <div class="categories-filter">
@@ -814,16 +897,10 @@
             </div>
             <div class="modal-body">
                 <div class="product-media">
-                    <div class="product-video" id="productVideoContainer">
-                        <!-- الفيديو سيتم إضافته -->
-                    </div>
-                    <div class="product-images" id="productImages">
-                        <!-- الصور ستتم إضافتها -->
-                    </div>
+                    <div class="product-video" id="productVideoContainer"></div>
+                    <div class="product-images" id="productImages"></div>
                 </div>
-                <div class="product-description" id="productDescription">
-                    <!-- الوصف سيتم إضافته -->
-                </div>
+                <div class="product-description" id="productDescription"></div>
                 <div class="modal-actions">
                     <button class="btn btn-cart" id="modalAddToCart">
                         <i class="fas fa-cart-plus"></i> إضافة إلى السلة
@@ -838,9 +915,7 @@
     <section class="cart-page container" id="cartPage" style="display:none;">
         <h2 class="section-title">سلة المشتريات</h2>
 
-        <div class="cart-items" id="cartItemsContainer">
-            <!-- عناصر السلة -->
-        </div>
+        <div class="cart-items" id="cartItemsContainer"></div>
 
         <div class="cart-summary">
             <div class="summary-row">
@@ -910,53 +985,49 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>معرض كاضم البهادلي</h3>
-                    <p>متخصصون في بيع اكسسوارات الموبايل، كفرات الأجهزة الكهربائية، وأجهزة العناية بالبشرة في ميسان.</p>
+                    <p>متخصصون في بيع اكسسوارات الموبايل، كفرات الأجهزة الكهربائية، وأجهزة العناية بالبشرة مع خدمة الطلب داخل ميسان.</p>
                 </div>
 
                 <div class="footer-section">
                     <h3>روابط سريعة</h3>
                     <ul>
-                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#" class="nav-home">الرئيسية</a></li>
                         <li><a href="#about">عن المعرض</a></li>
                         <li><a href="#" class="category-filter" data-category="موبايل">اكسسوارات الموبايل</a></li>
                         <li><a href="#" class="category-filter" data-category="أجهزة كهربائية">أجهزة كهربائية</a></li>
                         <li><a href="#" class="category-filter" data-category="عناية البشرة">عناية البشرة</a></li>
-                        <li><a href="about.html">معلومات معرض كاضم البهادلي في ميسان</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
                     <h3>معلومات التواصل</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> العراق، ميسان</li>
-                        <li><i class="fas fa-clock"></i> أوقات الدوام: من 9 صباحاً إلى 9 مساءً</li>
+                        <li><i class="fas fa-map-marker-alt"></i> العراق – ميسان</li>
+                        <li><i class="fas fa-clock"></i> مواعيد العمل: 9 صباحاً - 9 مساءً</li>
                     </ul>
                 </div>
             </div>
 
             <div class="copyright">
-                <p>جميع الحقوق محفوظة &copy; 2023 معرض كاضم البهادلي في ميسان</p>
+                <p>جميع الحقوق محفوظة &copy; <span id="yearSpan"></span> معرض كاضم البهادلي</p>
             </div>
         </div>
     </footer>
 
+    <!-- Firebase -->
     <script type="module">
-        // ==============================================
-        // دالة تحويل روابط Google Drive
-        // ==============================================
+        // تحويل روابط Google Drive
         function convertGoogleDriveLink(link, fileType = 'auto') {
             if (!link || typeof link !== 'string') return null;
 
             try {
                 link = link.trim();
 
-                // إذا لم يكن رابط Google Drive، إرجاعه كما هو
                 if (!link.includes('drive.google.com') && !link.includes('docs.google.com') &&
                     !/^[a-zA-Z0-9_-]{25,}$/.test(link)) {
                     return link;
                 }
 
-                // استخراج FILE_ID
                 let fileId = '';
                 const patterns = [
                     /drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/,
@@ -973,14 +1044,12 @@
                     }
                 }
 
-                // إذا كان الرابط هو fileId مباشرة
                 if (!fileId && /^[a-zA-Z0-9_-]{25,}$/.test(link)) {
                     fileId = link;
                 }
 
                 if (!fileId) return link;
 
-                // تحديد نوع الملف
                 if (fileType === 'auto') {
                     if (link.match(/\.(mp4|avi|mov|wmv|flv|mkv|webm)(\?|$)/i)) {
                         fileType = 'video';
@@ -989,7 +1058,6 @@
                     }
                 }
 
-                // إنشاء الرابط المناسب
                 if (fileType === 'image') {
                     return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
                 } else if (fileType === 'video') {
@@ -1003,9 +1071,7 @@
             }
         }
 
-        // ==============================================
-        // استيراد Firebase
-        // ==============================================
+        // Firebase imports
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
         import {
             getFirestore,
@@ -1026,16 +1092,13 @@
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
 
-        // ==============================================
-        // بيانات التطبيق
-        // ==============================================
+        // بيانات
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
         let allProducts = [];
         let currentCategory = 'all';
+        let currentProduct = null;
 
-        // ==============================================
         // عناصر DOM
-        // ==============================================
         const productsGrid = document.getElementById('productsGrid');
         const cartCount = document.getElementById('cartCount');
         const cartLink = document.getElementById('cartLink');
@@ -1058,13 +1121,15 @@
         const modalAddToCart = document.getElementById('modalAddToCart');
         const categoryBtns = document.querySelectorAll('.category-btn');
         const categoryFilters = document.querySelectorAll('.category-filter');
+        const heroSection = document.querySelector('.hero');
+        const aboutSection = document.querySelector('.about-section');
+        const productsSection = document.getElementById('productsSection');
+        const yearSpan = document.getElementById('yearSpan');
+        const homeLinks = document.querySelectorAll('.nav-home');
 
-        let currentProduct = null;
-
-        // ==============================================
-        // تهيئة المتجر
-        // ==============================================
         function initStore() {
+            if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
             loadProducts();
             updateCartCount();
             setupCategoryFilters();
@@ -1086,11 +1151,15 @@
                     productModal.style.display = 'none';
                 }
             });
+
+            homeLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showStorePage();
+                });
+            });
         }
 
-        // ==============================================
-        // تحميل المنتجات
-        // ==============================================
         async function loadProducts() {
             try {
                 const querySnapshot = await getDocs(collection(db, "products"));
@@ -1109,9 +1178,6 @@
             }
         }
 
-        // ==============================================
-        // عرض المنتجات
-        // ==============================================
         function renderProducts() {
             const filteredProducts = currentCategory === 'all'
                 ? allProducts
@@ -1121,9 +1187,9 @@
 
             if (filteredProducts.length === 0) {
                 productsGrid.innerHTML = `
-                    <div style="grid-column:1/-1; text-align:center; padding:40px;">
+                    <div style="grid-column:1/-1; text-align:center; padding:40px 10px;">
                         <i class="fas fa-box-open" style="font-size:60px; color:#ccc; margin-bottom:20px;"></i>
-                        <p>لا توجد منتجات في هذه الفئة</p>
+                        <p>لا توجد منتجات في هذه الفئة حالياً.</p>
                     </div>
                 `;
                 return;
@@ -1159,31 +1225,27 @@
 
             document.querySelectorAll('.btn-preview').forEach(btn => {
                 btn.addEventListener('click', (e) => {
-                    const productId = e.target.closest('button').dataset.id;
+                    const productId = e.currentTarget.dataset.id;
                     showProductModal(productId);
                 });
             });
 
             document.querySelectorAll('.btn-cart').forEach(btn => {
                 btn.addEventListener('click', (e) => {
-                    const productId = e.target.closest('button').dataset.id;
+                    const productId = e.currentTarget.dataset.id;
                     addToCart(productId);
                 });
             });
         }
 
-        // ==============================================
-        // عرض تفاصيل المنتج
-        // ==============================================
         function showProductModal(productId) {
             currentProduct = allProducts.find(p => p.id === productId);
             if (!currentProduct) return;
 
             modalProductTitle.textContent = currentProduct.title;
-            productDescription.textContent = currentProduct.description || 'لا يوجد وصف';
+            productDescription.textContent = currentProduct.description || 'لا يوجد وصف متوفر لهذا المنتج حالياً.';
             modalProductPrice.textContent = `${currentProduct.price || 0} دينار`;
 
-            // عرض الفيديو
             productVideoContainer.innerHTML = '';
             if (currentProduct.videoUrl) {
                 if (currentProduct.videoUrl.includes('drive.google.com')) {
@@ -1191,8 +1253,7 @@
                     productVideoContainer.innerHTML = `
                         <iframe src="${videoPreviewUrl}"
                                 allow="autoplay; encrypted-media; fullscreen"
-                                allowfullscreen>
-                        </iframe>
+                                allowfullscreen></iframe>
                     `;
                 } else {
                     productVideoContainer.innerHTML = `
@@ -1207,7 +1268,6 @@
                 productVideoContainer.style.display = 'none';
             }
 
-            // عرض الصور
             productImages.innerHTML = '';
             if (currentProduct.images && currentProduct.images.length > 0) {
                 currentProduct.images.forEach((img, index) => {
@@ -1227,16 +1287,14 @@
                     productImages.appendChild(imgElement);
                 });
             } else {
-                productImages.innerHTML = '<p style="text-align:center; color:var(--gray);">لا توجد صور</p>';
+                productImages.innerHTML = '<p style="text-align:center; color:var(--gray);">لا توجد صور إضافية</p>';
             }
 
             modalAddToCart.onclick = () => addToCart(currentProduct.id);
+
             productModal.style.display = 'block';
         }
 
-        // ==============================================
-        // إدارة السلة
-        // ==============================================
         function addToCart(productId) {
             const product = allProducts.find(p => p.id === productId);
             if (!product) return;
@@ -1261,7 +1319,6 @@
             localStorage.setItem('cart', JSON.stringify(cart));
             updateCartCount();
             alert(`تمت إضافة "${product.title}" إلى السلة`);
-
             if (productModal.style.display === 'block') {
                 productModal.style.display = 'none';
             }
@@ -1286,27 +1343,45 @@
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
                     const category = link.dataset.category;
+                    if (!category) return;
+                    currentCategory = category;
+
                     categoryBtns.forEach(b => b.classList.remove('active'));
                     const targetBtn = document.querySelector(`.category-btn[data-category="${category}"]`);
-                    if (targetBtn) {
-                        targetBtn.classList.add('active');
-                    }
-                    currentCategory = category;
+                    if (targetBtn) targetBtn.classList.add('active');
+
                     renderProducts();
+                    if (productsSection) {
+                        productsSection.scrollIntoView({ behavior: 'smooth' });
+                    }
                 });
             });
         }
 
-        // ==============================================
-        // إدارة الطلبات
-        // ==============================================
         function showCartPage() {
-            document.querySelector('section.container').style.display = 'none';
+            if (heroSection) heroSection.style.display = 'none';
+            if (aboutSection) aboutSection.style.display = 'none';
+            if (productsSection) productsSection.style.display = 'none';
+
             cartPage.style.display = 'block';
             checkoutPage.style.display = 'none';
             successMessage.style.display = 'none';
+
             renderCartItems();
             updateCartSummary();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showStorePage() {
+            if (heroSection) heroSection.style.display = 'block';
+            if (aboutSection) aboutSection.style.display = 'block';
+            if (productsSection) productsSection.style.display = 'block';
+
+            cartPage.style.display = 'none';
+            checkoutPage.style.display = 'none';
+            successMessage.style.display = 'none';
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function renderCartItems() {
@@ -1315,8 +1390,8 @@
                     <div class="empty-cart">
                         <i class="fas fa-shopping-cart"></i>
                         <h3>سلة المشتريات فارغة</h3>
-                        <p>لم تقم بإضافة أي منتجات</p>
-                        <button class="btn btn-cart" onclick="window.location.reload()">
+                        <p>لم تقم بإضافة أي منتجات حتى الآن.</p>
+                        <button class="btn btn-cart" onclick="window.location.href='#';">
                             <i class="fas fa-arrow-left"></i> العودة للمتجر
                         </button>
                     </div>
@@ -1330,8 +1405,7 @@
                 cartItem.className = 'cart-item';
                 cartItem.innerHTML = `
                     <div class="cart-item-image">
-                        <img src="${item.image || 'https://via.placeholder.com/80x80?text=No+Image'}"
-                             alt="${item.title}">
+                        <img src="${item.image || 'https://via.placeholder.com/80x80?text=No+Image'}" alt="${item.title}">
                     </div>
                     <div class="cart-item-details">
                         <h4 class="cart-item-title">${item.title}</h4>
@@ -1346,7 +1420,7 @@
 
             document.querySelectorAll('.remove-item').forEach(btn => {
                 btn.addEventListener('click', (e) => {
-                    const index = parseInt(e.target.closest('button').dataset.index);
+                    const index = parseInt(e.currentTarget.dataset.index);
                     removeFromCart(index);
                 });
             });
@@ -1378,7 +1452,10 @@
             cartPage.style.display = 'none';
             checkoutPage.style.display = 'block';
             successMessage.style.display = 'none';
+            checkoutForm.style.display = 'block';
             checkoutForm.reset();
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         async function submitOrder(e) {
@@ -1408,16 +1485,12 @@
                 localStorage.setItem('cart', JSON.stringify(cart));
                 updateCartCount();
                 checkoutForm.reset();
-
             } catch (error) {
                 console.error("Error submitting order:", error);
-                alert('حدث خطأ أثناء إرسال الطلب');
+                alert('حدث خطأ أثناء إرسال الطلب، حاول مرة أخرى.');
             }
         }
 
-        // ==============================================
-        // بدء التطبيق
-        // ==============================================
         document.addEventListener('DOMContentLoaded', initStore);
     </script>
 </body>
